@@ -8,22 +8,22 @@ const ChartStatistics = ({ title, amount, icon, percentage }) => {
   const textColor = useColorModeValue("gray.700", "white");
   const overlayRef = React.useRef();
   return (
-    <Flex direction='column'>
-      <Flex alignItems='center'>
-        <IconBox as='box' h={"30px"} w={"30px"} bg={iconTeal} me='6px'>
+    <Flex direction="column">
+      <Flex alignItems="center">
+        <IconBox as="box" h={"30px"} w={"30px"} bg={iconTeal} me="6px">
           {icon}
         </IconBox>
-        <Text fontSize='sm' color='gray.400' fontWeight='semibold'>
+        <Text fontSize="sm" color="gray.400" fontWeight="semibold">
           {title}
         </Text>
       </Flex>
-      <Text fontSize='lg' color={textColor} fontWeight='bold' mb='6px' my='6px'>
+      <Text fontSize="lg" color={textColor} fontWeight="bold" mb="6px" my="6px">
         {amount}
       </Text>
       <Progress
-        colorScheme='teal'
-        borderRadius='12px'
-        h='5px'
+        colorscheme="teal"
+        borderRadius="12px"
+        h="5px"
         value={percentage}
       />
     </Flex>

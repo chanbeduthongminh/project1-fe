@@ -54,35 +54,35 @@ export default function Configurator(props) {
           <DrawerHeader pt="24px" px="24px">
             <DrawerCloseButton />
             <Text fontSize="xl" fontWeight="bold" mt="16px">
-              Purity UI Configurator
+              Cấu hình Purity UI
             </Text>
-            <Text fontSize="md" mb="16px">
-              See your dashboard options.
-            </Text>
+            {/* <Text fontSize="md" mb="16px">
+              Cài đặt dashboard
+            </Text> */}
             <Separator />
           </DrawerHeader>
           <DrawerBody w="340px" ps="24px" pe="40px">
             <Flex flexDirection="column">
               <Box>
                 <Text fontSize="md" fontWeight="600">
-                  Sidenav Type
+                  Cấu hình thanh điều hướng
                 </Text>
-                <Text fontSize="sm" mb="16px">
-                  Choose between 2 different sidenav types.
-                </Text>
-                <Flex>
+                {/* <Text fontSize="sm" mb="16px" mt="16px">
+                  Chọn 1 trong 2 loại
+                </Text> */}
+                <Flex mt="30px">
                   <Button
                     w="50%"
                     p="8px 32px"
                     me="8px"
-                    colorScheme="teal"
+                    colorscheme="teal"
                     borderColor="teal.300"
                     color="teal.300"
                     variant="outline"
                     fontSize="xs"
                     onClick={props.onTransparent}
                   >
-                    Transparent
+                    Trong suốt
                   </Button>
                   <Button
                     type="submit"
@@ -104,11 +104,11 @@ export default function Configurator(props) {
                 justifyContent="space-between "
                 mb="16px"
               >
-                <Text fontSize="md" fontWeight="600" mb="4px">
+                {/* <Text fontSize="md" fontWeight="600" mb="4px">
                   Navbar Fixed
                 </Text>
                 <Switch
-                  colorScheme="teal"
+                  colorscheme ="teal"
                   isChecked={switched}
                   onChange={(event) => {
                     if (switched === true) {
@@ -119,30 +119,30 @@ export default function Configurator(props) {
                       setSwitched(true);
                     }
                   }}
-                />
+                /> */}
               </Box>
               <Flex
                 justifyContent="space-between"
                 alignItems="center"
                 mb="24px"
               >
-                <Text fontSize="md" fontWeight="600" mb="4px">
-                  Dark/Light
+                <Text fontSize="md" fontWeight="600" mb="4px" mt="10px">
+                  Chuyển đổi màu nền
                 </Text>
-                <Button onClick={toggleColorMode}>
-                  Toggle {colorMode === "light" ? "Dark" : "Light"}
+                <Button onClick={toggleColorMode} mt="10px">
+                  Màu {colorMode === "light" ? "tối" : "sáng"}
                 </Button>
               </Flex>
 
               <Separator />
               <Box mt="24px">
-                <Text fontSize="md" fontWeight="600">
+                {/* <Text fontSize="md" fontWeight="600">
                   Sidenav Type
                 </Text>
                 <Text fontSize="sm" mb="16px">
                   Choose between 2 different sidenav types.
-                </Text>
-                <Box>
+                </Text> */}
+                {/* <Box>
                   <Link
                     href="https://www.creative-tim.com/product/purity-ui-dashboard"
                     w="100%"
@@ -178,8 +178,8 @@ export default function Configurator(props) {
                       <Text textDecorationColor="none">Documentation</Text>
                     </Button>
                   </Link>
-                </Box>
-                <Flex
+                </Box> */}
+                {/* <Flex
                   justifyContent="center"
                   alignItems="center"
                   w="100%"
@@ -193,8 +193,8 @@ export default function Configurator(props) {
                   >
                     Star
                   </GitHubButton>
-                </Flex>
-                <Box w="100%">
+                </Flex> */}
+                {/* <Box w="100%">
                   <Text mb="6px" textAlign="center">
                     Thank you for sharing!
                   </Text>
@@ -204,7 +204,7 @@ export default function Configurator(props) {
                       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fpurity-ui-dashboard&text=Check%20Purity%20UI%20Dashboard%20made%20by%20%40CreativeTim%20and%20%40simmmple_web%20%23webdesign%20%23dashboard%20%23chakra"
                     >
                       <Button
-                        colorScheme="twitter"
+                        colorscheme ="twitter"
                         leftIcon={<FaTwitter />}
                         me="10px"
                       >
@@ -215,12 +215,12 @@ export default function Configurator(props) {
                       isExternal="true"
                       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fpurity-ui-dashboard"
                     >
-                      <Button colorScheme="facebook" leftIcon={<FaFacebook />}>
+                      <Button colorscheme ="facebook" leftIcon={<FaFacebook />}>
                         <Text>Share</Text>
                       </Button>
                     </Link>
                   </Flex>
-                </Box>
+                </Box> */}
               </Box>
             </Flex>
           </DrawerBody>

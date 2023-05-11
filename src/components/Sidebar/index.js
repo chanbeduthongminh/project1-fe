@@ -1,8 +1,6 @@
 /*eslint-disable*/
 // chakra imports
-import {
-  Box, useColorModeValue
-} from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import SidebarContent from "./SidebarContent";
 
@@ -25,7 +23,7 @@ function Sidebar(props) {
     sidebarRadius = "16px";
     sidebarMargins = "16px 0px 16px 16px";
   }
-
+  const check = () => {};
   // SIDEBAR
   return (
     <Box ref={mainPanel}>
@@ -46,19 +44,18 @@ function Sidebar(props) {
           pe="20px"
           m={sidebarMargins}
           borderRadius={sidebarRadius}
+          onClick={check}
         >
-          <SidebarContent routes={routes}
-        logoText={"PURITY UI DASHBOARD"}
-        display="none"
-        sidebarVariant={sidebarVariant}
-        />
+          <SidebarContent
+            routes={routes}
+            logoText={"TRANG CHỦ ĐIỀU KHIỂN"}
+            display="none"
+            sidebarVariant={sidebarVariant}
+          />
         </Box>
       </Box>
     </Box>
   );
 }
-
-
-
 
 export default Sidebar;

@@ -31,7 +31,7 @@ import routes from "routes.js";
 
 export default function HeaderLinks(props) {
   const { variant, children, fixed, secondary, onOpen, ...rest } = props;
-
+  const username = localStorage.getItem("username");
   // Chakra Color Mode
   let mainTeal = useColorModeValue("teal.300", "teal.300");
   let inputBg = useColorModeValue("white", "gray.800");
@@ -93,7 +93,7 @@ export default function HeaderLinks(props) {
           borderRadius="inherit"
         />
       </InputGroup>
-      <NavLink to="/auth/signin">
+      <NavLink to="/admin/profile">
         <Button
           ms="0px"
           px="0px"
@@ -115,7 +115,7 @@ export default function HeaderLinks(props) {
             )
           }
         >
-          <Text display={{ sm: "none", md: "flex" }}>Sign In</Text>
+          <Text display={{ sm: "none", md: "flex" }}>{username}</Text>
         </Button>
       </NavLink>
       <SidebarResponsive
@@ -130,7 +130,7 @@ export default function HeaderLinks(props) {
         ms={{ base: "16px", xl: "0px" }}
         me="16px"
         ref={settingsRef}
-        onClick={props.onOpen}
+        // onClick={props.onOpen}
         color={navbarIcon}
         w="18px"
         h="18px"

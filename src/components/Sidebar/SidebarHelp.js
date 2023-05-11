@@ -16,19 +16,19 @@ export function SidebarHelp(props) {
       alignItems="start"
       boxSize="border-box"
       p="16px"
-      h="170px"
+      h="150px"
       w="100%"
     >
-      <IconBox width="35px" h="35px" bg="white" mb="auto">
+      {/* <IconBox width="35px" h="35px" bg="white" mb="20px">
         <QuestionIcon color="teal.300" h="18px" w="18px" />
-      </IconBox>
-      <Text fontSize="sm" color="white" fontWeight="bold">
-        Need help?
+      </IconBox> */}
+      <Text fontSize="sm" color="white" fontWeight="bold" mt="35px">
+        Chào mừng
       </Text>
-      <Text fontSize="xs" color="white" mb="10px">
-        Please check our docs
+      <Text fontSize="xs" color="white" mb="10px" mt="10px">
+        Chúc quý vị có một trải nghiệm tốt
       </Text>
-      <Link
+      {/* <Link
         w="100%"
         href="https://demos.creative-tim.com/docs-purity-ui-dashboard/"
       >
@@ -50,7 +50,7 @@ export function SidebarHelp(props) {
         >
           DOCUMENTATION
         </Button>
-      </Link>
+      </Link> */}
     </Flex>
   );
 }

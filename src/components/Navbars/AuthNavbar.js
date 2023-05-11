@@ -70,7 +70,8 @@ export default function AuthNavbar(props) {
   }
   var brand = (
     <Link
-      href={`${process.env.PUBLIC_URL}/#/`}
+      // href={`${process.env.PUBLIC_URL}/#/`}
+      href={`/`}
       target="_blank"
       display="flex"
       lineHeight="100%"
@@ -88,7 +89,7 @@ export default function AuthNavbar(props) {
   var linksAuth = (
     <HStack display={{ sm: "none", lg: "flex" }}>
       <NavLink to="/admin/dashboard">
-        <Button
+        {/* <Button
           fontSize="sm"
           ms="0px"
           me="0px"
@@ -99,7 +100,7 @@ export default function AuthNavbar(props) {
           leftIcon={<HomeIcon color={navbarIcon} w="12px" h="12px" me="0px" />}
         >
           <Text>Dashboard</Text>
-        </Button>
+        </Button> */}
       </NavLink>
       <NavLink to="/admin/profile">
         <Button
@@ -145,7 +146,7 @@ export default function AuthNavbar(props) {
             <DocumentIcon color={navbarIcon} w="12px" h="12px" me="0px" />
           }
         >
-          <Text>Sign In</Text>
+          <Text>Đăng nhập</Text>
         </Button>
       </NavLink>
     </HStack>
@@ -184,7 +185,7 @@ export default function AuthNavbar(props) {
           />
         </Box>
         {linksAuth}
-        <Link href="https://creative-tim.com/product/purity-ui-dashboard">
+        {/* <Link href="https://creative-tim.com/product/purity-ui-dashboard">
           <Button
             bg={bgButton}
             color={colorButton}
@@ -199,7 +200,7 @@ export default function AuthNavbar(props) {
           >
             Free Download
           </Button>
-        </Link>
+        </Link> */}
       </Flex>
     </Flex>
   );
